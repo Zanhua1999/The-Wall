@@ -1,0 +1,11 @@
+img {
+    width: 20%;
+}
+
+#aanmelden{
+    display: block;
+}
+
+#inloggen{
+    display: none;
+}
