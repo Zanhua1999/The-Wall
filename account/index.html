@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <title>The Gram</title>
+    <meta name="author" content="Sohil Alami MD1A">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" ng-app="nerdive" ng-controller="neriveCtrl">
+  <div class="left-panel">
+    <div class="logo">
+      Nerdive
+    </div>
+    <nav>
+      <a href="#" ng-class="{'active': page == 'Dashboard'}" ng-click="page = 'Dashboard'"><i class="fa fa-bolt" aria-hidden="true"></i><span>Dashboard</span></a>
+      <a href="#" ng-class="{'active': page == 'Clients'}" ng-click="page = 'Clients'"><i class="fa fa-users" aria-hidden="true"></i><span>Clients</span></a>
+      <a href="#" ng-class="{'active': page == 'Settings'}" ng-click="page = 'Settings'"><i class="fa fa-gear" aria-hidden="true"></i><span>Settings</span></a>
+      <a href="#" ng-class="{'active': page == 'Account'}" ng-click="page = 'Account'"><i class="fa fa-user-circle" aria-hidden="true"></i><span>Account</span></a>
+    </nav>
+  </div>
+  <div class="right-panel">
+    <div class="page-container" ng-class="showPage()">
+      <div class="page">
+        <h1>Dashboard</h1>
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
+      <div class="page">
+        <h1>Clients</h1>
+      </div>
+      <div class="page">
+        <h1>Settings</h1>
+      </div>
+      <div class="page">
+        <h1>Account</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="js">
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
